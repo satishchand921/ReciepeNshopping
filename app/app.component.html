@@ -1,0 +1,27 @@
+<app-header (featureSelector) = "onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container" *ngIf="loadedFeature === 'recipeBook'">
+          <div class="container">
+              <img src="https://i.pinimg.com/originals/c4/0e/9c/c40e9c0c7f9048dfff3adef2f94eff27.jpg" 
+              alt="Snow" style="width:100%;height: 400px;">
+              <div>
+              <p> Recipes are important because they contain the information necessary to make a dish properly.
+                As with any set of instructions, you rely on them to give you all of the information you need. 
+                There isn't always someone nearby who has that knowledge.
+                Recipes also ensure standardization. If you eat a Burger King Whopper in San Francisco, 
+                fly to Boston and eat another one, they will be the same. 
+                Recipes also help control costs. 
+                Restaurants depend on their cooks to follow recipes so their food cost stays in line. 
+                The menu price of an item is determined by costing out a recipe. 
+                Following the recipes ensures that I make money.
+              </p>
+        </div>
+      </div>
+      </div>
+     <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+     <app-shopping-list *ngIf="loadedFeature === 'shopping'"></app-shopping-list>
+    </div>
+  </div>
+</div>

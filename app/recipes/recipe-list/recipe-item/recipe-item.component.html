@@ -1,0 +1,11 @@
+<a href="#" 
+class="list-group-item clearfix" 
+(click) = "onSelected()">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ recipeData.name }}</h4>
+        <p class="list-group-item-text">{{recipeData.description}}</p>
+    </div>
+    <span class="pull-right" style="float: right;margin-top: -70px;">
+        <img [src]="recipeData.imagePath" alt="item.imagePath" class="img-responsive" style="max-height: 50px;">
+    </span>
+</a>
